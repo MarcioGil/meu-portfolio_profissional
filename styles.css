@@ -91,17 +91,20 @@ nav a:hover, a:hover {
 section { margin-bottom: 32px; }
 section h2 { color: var(--secondary-color); margin-bottom: 10px; }
 
-#contato a {
-  font-weight: bold;
-  padding: 2px 4px;
-  border-radius: 4px;
-  background: linear-gradient(90deg, #3a7bd5 10%, #00d2ff 90%);
-  color: #fff;
-  transition: background 0.3s, color 0.3s;
+#projetos ul li {
+  margin-bottom: 24px; /* Espaço extra entre projetos */
 }
-#contato a:hover {
-  background: #fff;
+
+#contato a {
   color: #3a7bd5;
+  text-decoration: none;
+  font-weight: 400;
+  background: none;
+  padding: 0;
+  transition: color 0.2s;
+}
+#contato a:hover, #contato a:focus {
+  color: #00a0c6;
   text-decoration: underline;
 }
 
@@ -116,6 +119,14 @@ footer {
 footer strong {
   color: #ffe066;
   font-weight: bold;
+}
+
+a:focus, button:focus {
+  outline: 2px solid #3a7bd5;
+  outline-offset: 2px;
+}
+a, button {
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
