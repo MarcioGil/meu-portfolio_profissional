@@ -1,5 +1,6 @@
-// Scroll suave para navegação interna
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// ...existing code...
+// Scroll suave apenas para âncoras internas do menu
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const targetId = this.getAttribute('href').slice(1);
     const target = document.getElementById(targetId);
